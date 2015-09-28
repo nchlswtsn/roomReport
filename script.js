@@ -4,11 +4,13 @@
 
   roomApp.controller('mainCtrl', function($scope) {
       var rooms = [];
+      // $scope.rooms = [];
       $scope.addRoom = function(newRoom){
         rooms.push(newRoom);
         console.log(rooms);
       }
       var items = [];
+      // $scope.items = [];
       $scope.addItem = function(itemName, itemQuantity, itemCost, roomSelected){
         var newData = [];
         newData.push(itemName, itemQuantity, itemCost, roomSelected);
